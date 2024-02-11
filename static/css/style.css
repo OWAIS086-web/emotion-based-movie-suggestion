@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #9F00C5; /* Munsell purple */
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.nav-brand {
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    background-color: #9F00C5; /* Munsell purple */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #810091; /* Darker purple */
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: default;
+}
+
+audio {
+    margin-top: 20px;
+    width: 300px;
+}
+
+.emotion-display {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}

@@ -1,0 +1,27 @@
+User_ID,Movie Title,Genres,Directors,Actors,Emotion,Tomatometer Rating,Tomatometer Count
+1,Gumshoe,"Classics, Comedy, Drama, Mystery & Suspense",Stephen Frears,"Albert Finney, Billie Whitelaw, Frank Finlay",Sadness,100,6
+1,Guardians of the Galaxy,"Action & Adventure, Science Fiction & Fantasy",James Gunn (II),"Chris Pratt, Zoe Saldana, Dave Bautista",Excitement,91,328
+1,Riding Giants,"Documentary, Special Interest, Sports & Fitness","Stacy Peralta, Sam George","Sean Penn, Sam George, Dick Brewer, Buzzy Kerb",Neutral,93,96
+1,Keep the River on Your Right,"Documentary, Special Interest","David Shapiro, Laurie Gwen Shapiro, Laurie Sha...",NaN,Neutral,78,51
+1,Monsters,"Art House & International, Drama, Horror",Gareth Edwards (V),"Scoot McNairy, Whitney Able",Fear,73,160
+2,My All American,Drama,Angelo Pizzo,"Aaron Eckhart, Finn Wittrock, Robin Tunney",Happiness,32,46
+2,The Life Aquatic with Steve Zissou,"Action & Adventure, Comedy, Drama",Wes Anderson,"Bill Murray, Owen Wilson, Cate Blanchett",Excitement,56,222
+2,Patti Cake$,Drama,Geremy Jasper,"Danielle Macdonald, Bridget Everett, Siddhart",Sadness,85,176
+2,Lawrence of Arabia,"Action & Adventure, Classics, Drama, Romance",David Lean,"Peter O'Toole, Alec Guinness, Anthony Quinn",Excitement,97,87
+2,Sleepwalk with Me,"Comedy, Drama, Romance",Mike Birbiglia,"Mike Birbiglia, Lauren Ambrose, James Rebhorn",Happiness,87,77
+3,The Seventh Seal,"Art House & International, Classics, Drama",Ingmar Bergman,"Gunnar Bjornstrand, Bengt Ekerot, Nils Poppe",Sadness,94,93
+3,Home Alone 2: Lost in New York,"Comedy, Kids & Family",Chris Columbus,"Macaulay Culkin, Joe Pesci, Daniel Stern",Excitement,33,49
+3,La Belle Noiseuse,"Art House & International, Drama, Romance",Jacques Rivette,"Michel Piccoli, Jane Birkin, Emmanuelle Beart",Happiness,81,32
+3,The Sand Pebbles,"Action & Adventure, Classics, Drama, Romance",Robert Wise,"Steve McQueen, Richard Attenborough, Richard",Excitement,89,35
+3,The Beat Beneath My Feet,"Comedy, Drama, Musical",John Williams (IX),"Luke Perry, Nicholas Galitzine, Lisa Dillon",Happiness,50,6
+4,The Pursuit of Happyness,Drama,Gabriele Muccino,"Will Smith, Jaden Smith, Thandie Newton",Happiness,67,204
+4,Risky Business,Drama,Paul Brickman,"Tom Cruise, Rebecca De Mornay, Joe Pantoliano",Excitement,62,80
+4,Last Men in Aleppo,"Documentary, Special Interest",Feras Fayyad,Khalid (II),Sadness,97,32
+4,G.I. Joe: Retaliation,"Action & Adventure, Science Fiction & Fantasy",Jon M. Chu,"Dwayne Johnson, Bruce Willis, Channing Tatum",Excitement,28,228
+4,Planet 51,"Animation, Comedy, Kids & Family",Jorge Blanco,"Dwayne Johnson, Seann William Scott",Happiness,21,53
+5,Captain Marvel,"Action & Adventure, Science Fiction & Fantasy","Anna Boden, Ryan Fleck","Brie Larson, Samuel L. Jackson, Ben Mendelsohn",Excitement,79,549
+5,Pineapple Express,"Action & Adventure, Comedy, Drama",David Gordon Green,"Seth Rogen, James Franco, Danny McBride",Excitement,68,187
+5,The Sorcerer's Apprentice,"Action & Adventure, Science Fiction & Fantasy",Jon Turteltaub,"Nicolas Cage, Jay Baruchel, Alfred Molina",Happiness,41,121
+5,Max Manus: Man of War,"Action & Adventure, Art House & International","Joachim Rønning, Espen Sandberg","Aksel Hennie, Agnes Kittelsen, Nicolai Cleve",Sadness,76,51
+5,The Best of Youth,"Art House & International, Drama, Romance",Marco Tullio Giordana,"Luigi Lo Cascio, Alessio Boni, Adriana Asti",Happiness,94,94
+6,Can You Ever Forgive Me?,"Comedy, Drama, Mystery & Suspense",Marielle Heller,"Melissa McCarthy, Richard E. Grant, Dolly Wel",Happiness,98,325

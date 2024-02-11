@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Emotion Detection</title>
+</head>
+<body>
+    <h1>Audio Emotion Detection</h1>
+
+    <div>
+        <button onclick="startRecording()">Start Recording</button>
+        <button onclick="stopRecording()">Stop Recording</button>
+    </div>
+
+    <div>
+        <p>Status: <span id="status">Not Recording</span></p>
+    </div>
+
+    <div>
+        <p>Detected Emotion: <span id="detectedEmotion">-</span></p>
+    </div>
+
+    <div>
+        <h2>Recommended Movies:</h2>
+        <ul id="recommendedMovies"></ul>
+    </div>
+
+    <script>
+        let mediaRecorder;
+        let chunks = [];
+
+        function startRecording() {
+            navigator.mediaDevices.getUserMedia({ audio: true })
+                .then((stream) => {
+                    mediaRecorder = new MediaRecorder(stream);
+                    mediaRecorder.ondataavailable = (e) => {
+                        if (e.data.size > 0) {
+                            chunks.push(e.data);
+                        }
+                    };
+                    mediaRecorder.onstop = () => {
+                        const blob = new Blob(chunks, { type: 'audio/wav' });
+                        const formData = new FormData();
+                        formData.append('file', blob, 'recorded_audio.wav');
+
+                        fetch('/upload', {
+                            method: 'POST',
+                            body: formData
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            document.getElementById('status').innerText = 'Not Recording';
+                            document.getElementById('detectedEmotion').innerText = data.emotion;
+
+                            const recommendedMovies = document.getElementById('recommendedMovies');
+                            recommendedMovies.innerHTML = '';
+                            if (data.suggested_movies.length > 0) {
+                                data.suggested_movies.forEach(movie => {
+                                    const listItem = document.createElement('li');
+                                    listItem.innerText = movie;
+                                    recommendedMovies.appendChild(listItem);
+                                });
+                            } else {
+                                const listItem = document.createElement('li');
+                                listItem.innerText = 'No recommended movies for this emotion';
+                                recommendedMovies.appendChild(listItem);
+                            }
+                        })
+                        .catch(error => console.error('Error:', error));
+                    };
+
+                    mediaRecorder.start();
+                    document.getElementById('status').innerText = 'Recording...';
+                })
+                .catch(error => console.error('Error accessing microphone:', error));
+        }
+
+        function stopRecording() {
+            if (mediaRecorder && mediaRecorder.state === 'recording') {
+                mediaRecorder.stop();
+                document.getElementById('status').innerText = 'Processing...';
+                chunks = [];
+            }
+        }
+    </script>
+</body>
+</html>
